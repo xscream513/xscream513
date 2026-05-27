@@ -1,0 +1,24 @@
+# --- Secrets et Données sensibles (À NE JAMAIS PUSHER) ---
+*.env
+*.key
+*.pem
+secrets.ps1
+config.json
+credentials.csv
+
+# --- Fichiers de configuration spécifiques aux équipements ---
+# Exclure les fichiers de conf exportés qui contiennent souvent des IPs ou des mots de passe
+*.conf
+*.cfg
+!/configs/template_*.conf  # Optionnel : Garder seulement vos modèles propres
+
+# --- Fichiers temporaires Windows et IDE ---
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# --- Logs et fichiers de sortie d'automatisation ---
+*.log
+output/
+*.tmp
